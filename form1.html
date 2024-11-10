@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Application Form</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <h1>Library Membership Application</h1>
+    <form id="membershipForm">
+        
+        <label for="fullNameTH">ชื่อ - นามสกุล (ภาษาไทย) <span>*</span></label>
+        <input type="text" id="fullNameTH" name="fullNameTH" required>
+
+        <label for="fullNameEN">Full Name (English) <span>*</span></label>
+        <input type="text" id="fullNameEN" name="fullNameEN" required>
+       
+        <label>Gender <span>*</span></label>
+        <select name="gender" required>
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="studentID">Student ID <span>*</span></label>
+        <input type="text" id="studentID" name="studentID" required pattern="\d{10}" title="10 digits">
+
+        <label for="faculty">Faculty <span>*</span></label>
+        <input type="text" id="faculty" name="faculty" required>
+
+        <label for="email">E-mail Address <span>*</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="dob">Date of Birth <span>*</span></label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="genres">Preferred Book Genres</label>
+        <input type="text" id="genres" name="genres" placeholder="e.g., Fiction, Science, History">
+
+        <label>Subscribe to library updates via email?</label>
+        <label for="subscribeYes">Yes</label>
+        <input type="radio" id="subscribeYes" name="subscribe" value="yes">
+        <label for="subscribeNo">No</label>
+        <input type="radio" id="subscribeNo" name="subscribe" value="no" checked>
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
